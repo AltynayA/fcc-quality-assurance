@@ -33,10 +33,10 @@ suite('Unit Tests', function () {
   suite('Equality', function () {
     // #5
     test('#equal, #notEqual', function () {
-      assert.Equal(12, '12', 'Numbers are coerced into strings with ==');
-      assert.NotEqual({ value: 1 }, { value: 1 }, '== compares object references');
-      assert.Equal(6 * '2', '12');
-      assert.NotEqual(6 + '2', '12');
+      assert.equal(12, '12', 'Numbers are coerced into strings with ==');
+      assert.notEqual({ value: 1 }, { value: 1 }, '== compares object references');
+      assert.equal(6 * '2', '12');
+      assert.notEqual(6 + '2', '12');
     });
     // #6
     test('#strictEqual, #notStrictEqual', function () {
@@ -47,8 +47,8 @@ suite('Unit Tests', function () {
     });
     // #7
     test('#deepEqual, #notDeepEqual', function () {
-      assert.fail({ a: '1', b: 5 }, { b: 5, a: '1' }, "The order of keys doesn't matter");
-      assert.fail({ a: [5, 6] }, { a: [6, 5] }, 'The order of array elements does matter');
+      assert.deepEqual({ a: '1', b: 5 }, { b: 5, a: '1' }, "The order of keys doesn't matter");
+      assert.notDeepEqual({ a: [5, 6] }, { a: [6, 5] }, 'The order of array elements does matter');
     });
   });
 
