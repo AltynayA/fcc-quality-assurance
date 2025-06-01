@@ -72,13 +72,13 @@ Browser.site = 'https://fcc-quality-assurance.onrender.com';
 const browser = new Browser();
 
 suite('Functional Tests with Zombie.js', function () {
-  suiteSetup(function(done) {
+  suiteSetup(function (done) {
     return browser.visit('/', done);
   });
   this.timeout(5000);
 
   suite('Headless browser', function () {
-    test('should have a working "site" property', function() {
+    test('should have a working "site" property', function () {
       assert.isNotNull(browser.site);
     });
   });
@@ -86,21 +86,18 @@ suite('Functional Tests with Zombie.js', function () {
   suite('"Famous Italian Explorers" form', function () {
     // #5
     test('Submit the surname "Colombo" in the HTML form', function (done) {
-      browser.fill('surname', 'Colombo').then(() => {
-        browser.pressButton('submit', () => {
-          browser.assert.success();
-          browser.assert.text('span#name', 'Cristoforo');
-          browser.assert.text('span#surname', 'Colombo');
-          browser.assert.elements('span#dates', 1);
-          done();
-        });
+      browser.fill('surname', 'Colombo').pressButton('submit', function () {
+        browser.assert.success();
+        browser.assert.text('span#name', 'Cristoforo');
+        browser.assert.text('span#surname', 'Colombo');
+        browser.assert.elements('span#dates', 1);
+        done();
       });
     });
 
     // #6
-    test('submit "surname" : "Vespucci" - write your e2e test...', function(done) {
-      // fill the form, and submit.
-      browser.fill('surname', 'Vespucci').pressButton('submit', function(done) {
+    test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
+      browser.fill('surname', 'Vespucci').pressButton('submit', function () {
         browser.assert.success();
         browser.assert.text('span#name', 'Amerigo');
         browser.assert.text('span#surname', 'Vespucci');
@@ -108,7 +105,6 @@ suite('Functional Tests with Zombie.js', function () {
         done();
       });
     });
+  });
 
-  })
-    });
-
+});
