@@ -77,8 +77,6 @@ const browser = new Browser();
       });
       this.timeout(5000);
 
-
-
   suite('Headless browser', function () {
     test('should have a working "site" property', function() {
       assert.isNotNull(browser.site);
@@ -87,10 +85,16 @@ const browser = new Browser();
 
   suite('"Famous Italian Explorers" form', function () {
     // #5
-    test('Submit the surname "Colombo" in the HTML form', function (done) {
-      assert.fail();
-
-      done();
+    test('Submit the surname "Polo" in the HTML form', function (done) {
+      browser.fill('surname', 'Colombo').then(() => {
+        browser.pressButton('submit', () => {
+          assert.equal(browser.status, 200);
+          browser.assert.text('span#name', 'Marco');
+          browser.assert.text('span#surname', 'Polo');
+          browser.assert.elements('span#dates', 1);
+          done();
+        });
+      });
     });
     // #6
     test('Submit the surname "Vespucci" in the HTML form', function (done) {
