@@ -85,12 +85,12 @@ const browser = new Browser();
 
   suite('"Famous Italian Explorers" form', function () {
     // #5
-    test('Submit the surname "Polo" in the HTML form', function (done) {
+    test('Submit the surname "Colombo" in the HTML form', function (done) {
       browser.fill('surname', 'Colombo').then(() => {
         browser.pressButton('submit', () => {
-          assert.equal(browser.status, 200);
-          browser.assert.text('span#name', 'Marco');
-          browser.assert.text('span#surname', 'Polo');
+          browser.assert.success();
+          browser.assert.text('span#name', 'Cristoforo');
+          browser.assert.text('span#surname', 'Colombo');
           browser.assert.elements('span#dates', 1);
           done();
         });
