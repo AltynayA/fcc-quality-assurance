@@ -68,9 +68,14 @@ suite('Functional Tests', function () {
 });
 
 const Browser = require('zombie');
+Browser.site = 'https://fcc-quality-assurance.onrender.com';
+const browser = new Browser();
 
-suite('Functional Tests with Zombie.js', function () {
-  this.timeout(5000);
+    suite('Functional Tests with Zombie.js', function () {
+      suiteSetup(function(done) {
+        return browser.visit('/', done);
+      });
+      this.timeout(5000);
 
 
 
