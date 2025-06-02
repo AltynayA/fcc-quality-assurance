@@ -1,4 +1,4 @@
-This repository contains solutions and learning notes for the **Quality Assurance and Testing with Chai** section of the [freeCodeCamp Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/).
+Solutions and learning notes for the **Quality Assurance and Testing with Chai** section of the [freeCodeCamp Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/).
 
 ### 🧪 Unit Testing with Chai
 - Basic assertions (`assert`, `isOk`, `isNotOk`)
