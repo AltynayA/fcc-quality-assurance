@@ -1,21 +1,18 @@
-Solutions and learning notes for the **Quality Assurance and Testing with Chai** section of the [freeCodeCamp Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/).
+# Quality Assurance and Testing with Chai
 
-### 🧪 Unit Testing with Chai
-- Basic assertions (`assert`, `isOk`, `isNotOk`)
-- Equality checks (`==`, `===`, `.deepEqual`)
-- Type and structure testing (arrays, strings, objects)
-- Range, value, and property assertions
-- Instance and constructor checks
+Solutions from the **Quality Assurance and Testing with Chai** section of the [freeCodeCamp Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/).  
+Covers writing unit and functional tests using **Chai**, **Mocha**, and **Zombie.js**.
 
-### 🌐 Functional Testing with Chai-HTTP
-- Run Functional Tests on API Endpoints (GET, POST, PUT)
-- Chain Assertions on HTTP Responses
-- Simulate Actions Using a Headless Browser
-- Run Functional Tests Using a Headless Browser (Zombie.js)
+## 📚 Topics Covered
 
-## 🚀 Tools and Libraries Used
+- Assertions with Chai (`assert`, `isOk`, `deepEqual`, etc.)
+- Testing data types, values, and structures
+- API testing with Chai-HTTP (GET, PUT, POST)
+- Headless browser testing with Zombie.js
 
-- **Mocha** – JS test framework  
-- **Chai** – assertion library
-- **Chai-HTTP** – plugin for testing HTTP endpoints
-- **Zombie.js** – headless browser for simulating UI
+## 🛠️ Tools
+
+- Mocha – Testing framework  
+- Chai – Assertion library  
+- Chai-HTTP – API testing  
+- Zombie.js – Headless browser testing
