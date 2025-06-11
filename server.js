@@ -25,6 +25,7 @@ app.route('/')
   });
 
 //For FCC testing purposes
+// uncomment when func test
 fccTestingRoutes(app);
 
 //Routing for API 
@@ -44,6 +45,7 @@ const listener = app.listen(process.env.PORT || 3000, function () {
     console.log('Running Tests...');
     setTimeout(function () {
       try {
+        //   uncomment when needed
         runner.run();
       } catch(e) {
           console.log('Tests are not valid:');
