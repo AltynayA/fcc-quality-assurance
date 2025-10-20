@@ -1,0 +1,108 @@
+/* BRAT BODY */
+body {
+  background-color: #111;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#solution-container {
+  max-width: 600px; /* 💡 Limits width */
+  margin: 2rem auto; /* 💡 Centered horizontally */
+  background: #1a1a1a;
+  border: 2px solid #8ACE00;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #8ACE00;
+  color: #8ACE00;
+  text-align: left;
+}
+#bg-video {
+  top:200px;
+  position: absolute;
+  left: 500px;
+  width: 30vw;    /* Decrease from 30vw to 20vw */
+  height: 20vh;
+  transform: scale(0.6);
+  object-fit: cover;
+  z-index: 2; /* 🔼 Now it's ABOVE the content */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* HEADING */
+h1 {
+  font-size: 2.5rem;
+  color: #8ACE00;
+  text-shadow: 0 0 10px #8ACE00;
+  margin-top: 2rem;
+}
+
+/* TEXTAREA */
+#text-input {
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #8ACE00;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 0 12px #8ACE00;
+  margin-bottom: 1rem;
+}
+
+/* DROPDOWN */
+#locale-select {
+  background: #1a1a1a;
+  color: #8ACE00;
+  border: 2px solid #8ACE00;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #8ACE00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#locale-select:hover {
+  background-color: #8ACE00;
+  color: black;
+}
+
+/* TRANSLATE BUTTON */
+#translate-btn {
+  background: #8ACE00;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #8ACE00;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+#translate-btn:hover {
+  background-color: black;
+  color: #8ACE00;
+  border: 2px solid #8ACE00;
+  box-shadow: 0 0 20px #8ACE00;
+}
+
+/* OUTPUT */
+#translated-sentence {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #8ACE00;
+  margin-top: 10px;
+  color: #8ACE00;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px #8ACE00;
+}
