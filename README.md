@@ -1,18 +1,18 @@
-# Quality Assurance and Testing with Chai
+# FCC Quality Assurance Projects Collection
 
-Solutions from the **Quality Assurance and Testing with Chai** section of the [freeCodeCamp Quality Assurance Certification](https://www.freecodecamp.org/learn/quality-assurance/).  
-Covers writing unit and functional tests using **Chai**, **Mocha**, and **Zombie.js**.
+This repository is a collection of my FreeCodeCamp Quality Assurance projects.  
+Each project is organized in its own folder and contains its own README with setup, dependencies, and usage instructions.
 
-## 📚 Topics Covered
+## Projects included:
+- `fcc-quality-assurance-chai` – testing with Chai assertion library
+- `fcc-advanced-node-express` – advanced Node.js and Express API projects
+- `fcc-qa-issue-tracker` – issue tracker
+- `fcc-qa-metric-imperial-converter` – metric/imperial converter
+- `fcc-qa-personal-library` – personal library management
+- `fcc-qa-sudoku-solver` – Sudoku solver
+- `fcc-qa-american-british-translator` – American-British English translator
 
-- Assertions with Chai (`assert`, `isOk`, `deepEqual`, etc.)
-- Testing data types, values, and structures
-- API testing with Chai-HTTP (GET, PUT, POST)
-- Headless browser testing with Zombie.js
-
-## 🛠️ Tools
-
-- Mocha – Testing framework  
-- Chai – Assertion library  
-- Chai-HTTP – API testing  
-- Zombie.js – Headless browser testing
+## How to use
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/AltynayA/fcc-quality-assurance.git
